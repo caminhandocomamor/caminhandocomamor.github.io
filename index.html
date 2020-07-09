@@ -5,18 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script src="https://kit.fontawesome.com/4f0b39b0b4.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 	<title>Caminhando com Amor</title>
 <style type="text/css">
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Open Sans';
 	height: 100%;
 }
 body {
 	display: block;
 	height: 100%;
+}
+button, h2 {
+	font-family: 'Open Sans';
+	font-weight: 600;
+}
+h2 {
+	margin: .3em;
 }
 button {
 	background-color: #FFFFFF;
@@ -25,7 +31,6 @@ button {
 	-webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
 	box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
-	font-family: 'Open Sans semibold';
 	font-size: 24px;
 	border-radius: 12px;
 	padding: 8px;
@@ -33,12 +38,13 @@ button {
 	min-width: 300px;
 	cursor: pointer;
 }
-button:hover {
+button:hover, button:focus {
 	background-color: #FF608E;
 }
-button:focus, button:active {
-	background-color: #FF0D53;
+button:active:hover {
 	color: white;
+	background-color: #FF0D53;
+	padding: 10px 6px 6px 10px;
 }
 #wrarp {
 	min-width: 100%;
@@ -56,7 +62,7 @@ button:focus, button:active {
 #logo {
 	height: 100%;
 	width: 50%;
-	padding: 50px 0 0 175px;
+	padding: 10px 0 0 175px;
 	text-align: center;
 }
 #contato {
@@ -85,24 +91,24 @@ button:focus, button:active {
 <body>
 	<div id="wrarp">
 		<div id="content">
-			<img src="./static/images/logo.png" alt="Logo" id="logo">
+			<img src="./static/images/logo.png" alt="Logo" title="Caminhando com Amor" id="logo">
 			<div id="contato">
-				<h3>Contato</h3>
+				<h2>Contato</h2>
 				<ul>
-					<li><a href="mailto:contato@caminhandocomamor.com.br">
-						<button><i class="fas fa-at"></i> Email</button>
+					<li><a href="mailto:contato@caminhandocomamor.com.br" target="_blank" tabindex="-1">
+						<button><i class="fas fa-at"></i>&nbsp; Email</button>
 					</a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=5537991484661">
-						<button><i class="fab fa-whatsapp"></i> WhatsApp</button>
+					<li><a href="https://api.whatsapp.com/send?phone=5537991484661" target="_blank" tabindex="-1">
+						<button><i class="fab fa-whatsapp"></i>&nbsp; WhatsApp</button>
 					</a></li>
-					<li><a href="https://www.facebook.com/CaminhandoComAmorArt/">
-						<button><i class="fab fa-facebook-f"></i> Facebook</button>
+					<li><a href="https://www.facebook.com/CaminhandoComAmorArt/" target="_blank" tabindex="-1">
+						<button><i class="fab fa-facebook-f"></i>&nbsp; Facebook</button>
 					</a></li>
-					<li><a href="https://www.instagram.com/caminhando.com.amor/">
-						<button><i class="fab fa-instagram"></i> Instagram</button>
+					<li><a href="https://www.instagram.com/caminhando.com.amor/" target="_blank" tabindex="-1">
+						<button><i class="fab fa-instagram"></i>&nbsp; Instagram</button>
 					</a></li>
-					<li><a href="https://caminhandocomamor.smartpos.app">
-						<button><i class="fas fa-shopping-bag"></i> Catalogo</button>
+					<li><a href="https://caminhandocomamor.smartpos.app" target="_blank" tabindex="-1">
+						<button><i class="fas fa-shopping-bag"></i>&nbsp; Catalogo</button>
 					</a></li>
 				</ul>
 			</div>
